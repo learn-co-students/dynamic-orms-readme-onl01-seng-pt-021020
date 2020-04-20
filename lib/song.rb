@@ -9,7 +9,7 @@ class Song
   end
 
   def self.column_names
-    DB[:conn].results_as_hash = true
+    DB[:conn].results_as_hash = 1 == 1
 
     sql = "pragma table_info('#{table_name}')"
 
